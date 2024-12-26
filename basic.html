@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=none">
+  <title>Day 45 website</title>
+  <link rel="stylesheet" media="screen and (min-width: 721px)" href="mainDesk.css">
+  <link rel="stylesheet" media="screen and (max-width: 481px)" href="main480.css">
+  <link rel="stylesheet" media="screen and (max-width: 361px)" href="main360.css">
+  </head>
+<body> 
+    <div class="container">
+        <div class="header">
+            <div class="simbol">
+              <div id="h"><span class="koushiki">YukiHara公式</span><span class="saito"> ● サイト` </span></div>
+              <span class="se">⌕</span>
+              <span class="yinyang">☯</span>
+              <span class="ham-nav">☰</span>
+            </div>
+        </div>
+        <div class="nav">
+            <ul class="navList">
+              <h3>Website root</h3>
+              <li><a href="index.html" target="_self">Back to Home</a></li>
+              <li><a class="mainht" href="main.html" target="_self">Main page</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <h3>Website root</h3>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+            </ul>
+        </div>
+        <div class="navd">
+            <ul class="navdList">
+              <h3>Website root</h3>
+              <li><a href="index.html" target="_self">Back to Home</a></li>
+              <li><a class="mainht" href="main.html" target="_self">Main page</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <h3>Website root</h3>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+              <li><a href="none" target="_self">Other project</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="se-content">
+              <input type="text" name="search" id="search" placeholder="Search items...">
+              <ul id="listItem">
+                <li><a href="main.html">Main website</a></li>
+                <li><a href="none">item in list2</a></li>
+                <li><a href="none">item in list2</a></li>
+                <li><a href="none">item in list3</a></li>
+                <li><a href="none">item in list4</a></li>
+                <li><a href="none">item in list5</a></li>
+                <li><a href="none">item in list4</a></li>
+                <li><a href="none">item in list6</a></li>
+                <li><a href="none">item in list6</a></li>
+                <li><a href="none">item in list7</a></li>
+                <li><a href="none">item in list7</a></li>
+                <li><a href="none">item in list2</a></li>
+                <li><a href="none">item in list1</a></li>
+                <li><a href="none">item in list2</a></li>
+                <li><a href="none">item in list1</a></li>
+                <li><a href="none">item in list2</a></li>
+                <li><a href="none">item in list2</a></li>
+                <li><a href="none">item in list3</a></li>
+                <li><a href="none">item in list4</a></li>
+              </ul>
+            </div>        
+        </div>
+    </div>
+   
+    
+
+    <script>
+
+      const hamButton = document.getElementsByClassName("ham-nav")[0];
+      hamButton.addEventListener('click',()=>{
+        if(nav.style.right == "-64vh"){
+          nav.style.right = "0vh"
+        }else{
+          nav.style.right = "-64vh"
+      };
+      })
+
+
+      const koushiki = document.getElementsByClassName("koushiki")[0];
+      koushiki.addEventListener('click',()=>{
+        open("index.html","_self")
+      })
+      //searc//
+      const seNav = document.getElementsByClassName("se")[0];
+      const seContent = document.getElementsByClassName('se-content')[0];
+      seNav.addEventListener('click',()=>{
+          if(seContent.style.top == "-110vh"){
+            seContent.style.top = "15vh"
+          }else{
+            seContent.style.top = "-110vh"
+          }
+      })
+      const input = document.getElementById("search");
+      const listItems = document.querySelectorAll("#listItem li");
+  
+      input.addEventListener('input',()=>{
+        let searchs = input.value.toLowerCase();
+  
+        listItems.forEach(x => {
+          let text = x.textContent.toLowerCase();
+          x.style.display = text.includes(searchs) ? "" : "none"
+        })
+      })
+  
+      //untuk yin yang//
+      const trigger = document.getElementsByClassName("yinyang")[0];
+      const header = document.getElementsByClassName("header")[0];
+      const simbol = document.getElementsByClassName("simbol")[0];
+      const navd = document.getElementsByClassName("navd")[0];
+      const nav = document.getElementsByClassName("nav")[0];
+      let savedmode = localStorage.getItem("mode");
+  
+
+     if (savedmode === "light") {
+        document.body.classList.add("lightMode");
+        header.classList.add("lightMode21");
+        simbol.classList.add("lightMode2");
+        navd.classList.add("lightModenav");
+        nav.classList.remove("lightModenav");
+        
+      } else {
+        document.body.classList.remove("lightMode");
+        header.classList.remove("lightMode21");
+        simbol.classList.remove("lightMode2");
+        navd.classList.remove("lightModenav");
+        nav.classList.remove("lightModenav");
+        
+      }
+
+      trigger.addEventListener('click', () => {
+        const isLightMode = document.body.classList.toggle("lightMode");
+        header.classList.toggle("lightMode21", isLightMode);
+        simbol.classList.toggle("lightMode2", isLightMode);
+        navd.classList.toggle("lightModenav", isLightMode);
+        nav.classList.toggle("lightModenav", isLightMode);
+
+
+       localStorage.setItem("mode", isLightMode ? "light" : "dark");
+      });
+
+    </script>
+</body>
+</html>
