@@ -39,7 +39,7 @@
       left:-1vh;
       top:-1.4vh;
       position:absolute;
-      font-size:5.6vh;
+      font-size:6.6vh;
       width:41vh;
       letter-spacing:-0.85vh;
       height:100%;
@@ -107,14 +107,14 @@
       position:absolute;
       right:9.3vh;
       cursor:pointer;
-      top:2.15vh;
+      top:1.95vh;
     }
     .se{
       cursor:pointer;
       float:right;
       position:absolute;
       right:4vh;
-      top:-1.76vh;
+      top:-0.7vh;
       font-size:7.8vh
     }
     .magContains{
