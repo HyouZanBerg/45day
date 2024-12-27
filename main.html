@@ -110,14 +110,32 @@
               <img src="image.png">
             </section>
           </section> 
+          <section class="section2">
+            <img src="pfp.jpg">
+            <p id="p1">This Website was created by some <span>web development learner- </span>
+                <br>
+                with a nickname "Andries Gunawan" or 
+                "Yukihara Aoba"<br>(Chosen Japanese name, this name mean 'Leaf In The SnowField').<br>
+                i'm on my journey to become <em>fullstack wesbite</em> now<br>
+                 or <em>to make Month-1 Project</em>. <br>
+                 <span>i spent around 25 hours to make this website and the android version (only 360px N 480px)</span>
+            </p>
+            <article class="p2">"Tada susumidasu yori hokanai,hoka no shitaku wa nai,kono inochi ga naku naru made,
+                ganbatte honki wo DASHITE,<br>JINSEI WO MUDA NI SHINAIDE"
+                <br><br><br><br><br><br>
+                <br>we can only go foward,there's no other option,until death do his part,keep moving,UNLEASH IT,
+                DON'T WASTE YOUR LIFE
+                <br><br>
+            </article>
+        </section>
           <section class="template3">
-            <span id="a3rdheader">Program Language that i can do now:</span>
+            <span id="a3rdheader">Program Language &nbspthat i can do now:</span>
             <div class="img-flex">
               <div class="a3rd-img"><img src="CSS.png"></div>
               <div class="a4th-img"><img src="JS.png"></div>
             </div>
             <span id="text3">And there are still some program lang,<br>
-            &nbsp <u>that i want to learn very much !!</u></span>
+            &nbsp that i want to learn very much !!</span>
           </section> 
           <section class="template4">
             <div class="ook">
@@ -130,7 +148,6 @@
             </ul>
             </div>
           </section> 
-          
         </section>
       </div>
    
@@ -181,7 +198,6 @@
       const navd = document.getElementsByClassName("navd")[0];
       const nav = document.getElementsByClassName("nav")[0];
       let savedmode = localStorage.getItem("mode");
-      const template = document.getElementsByClassName("template");
   
 
      if (savedmode === "light") {
@@ -189,9 +205,6 @@
         header.classList.add("lightMode21");
         simbol.classList.add("lightMode2");
         navd.classList.add("lightModenav");
-        for(let i = 0;i < template.length;i++){
-          template[i].classList.add("lightModeTempv");
-        }
         
       } else {
         document.body.classList.remove("lightMode");
@@ -199,9 +212,6 @@
         simbol.classList.remove("lightMode2");
         navd.classList.remove("lightModenav");
         nav.classList.remove("lightModenav");
-        for(let i = 0;i < template.length;i++){
-          template[i].classList.remove("lightModeTemp");
-        }
       }
 
       trigger.addEventListener('click', () => {
@@ -210,10 +220,6 @@
         simbol.classList.toggle("lightMode2", isLightMode);
         navd.classList.toggle("lightModenav", isLightMode);
         nav.classList.toggle("lightModenav", isLightMode);
-        for(let i = 0;i < template.length;i++){
-          template[i].classList.toggle("lightModeTemp", isLightMode);
-        }
-
 
        localStorage.setItem("mode", isLightMode ? "light" : "dark");
       });
