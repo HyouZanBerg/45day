@@ -4,7 +4,7 @@
       margin: 0px;
       overflow-x:hidden;
       overflow-y:scroll;
-      background-color:#FAFAFA;
+      background-color:#1E1E2F;
       height:100vh
     }
     .contain{
@@ -15,7 +15,7 @@
     }
     .header{
       grid-area:header;
-      background-color:rgb(14, 13, 13);
+      background-color:rgb(255, 233, 233);
       color:white;
       height:14%;
       width:100%;
@@ -24,8 +24,9 @@
       z-index:1;
     }
     .simbol{
-      background-image: linear-gradient(to right,#FFFFFF,#E6E6E6);
-      color:#2C2C2C;
+      background-image: linear-gradient(to right,#1E1E2F,#34344A);
+      color:rgb(226, 223, 223);
+      text-shadow:4px 4px 4px #6C63FF;
       font-size: 12.4vh;
       margin-top:-2.7vh;
       padding-left: 1vh;
@@ -34,7 +35,6 @@
       overflow-x:hidden;
       overflow-y:hidden;
       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      text-shadow: 2px 2px 5px #CCCCCC;
     }
     #h{
       margin-top:-1vh;
@@ -127,7 +127,7 @@
       grid-area:nav;
       height:86vh;
       width:13%;
-      background: linear-gradient(180deg,rgb(204, 203, 203),white);
+      background :linear-gradient(180deg, #161f29,rgb(17, 10, 32));
       border-right: 0.5vh solid rgba(105, 105, 105, 0.5);
       position:fixed;
       border-right:0.5vh solid rgb(105, 105, 105);
@@ -211,14 +211,6 @@
       margin-top:17.2vh;
       display:flex;
       flex-flow: column;
-    }
-    .template{
-      background-color:rgb(245, 242, 242);
-      width:170vh;
-      height:90vh;
-      margin-left:35vh;
-      margin-bottom:40vh;
-      z-index:-2
     }
     .template1{
       width:170vh;
@@ -337,6 +329,72 @@
     color:rgb(170, 227, 250);
     text-shadow:2px 2px 4px azure,-1.7px -2.4px 2px black
    }
+   .section2 > p > span{
+    text-decoration:underline 2px black
+}
+.section2{
+   background-image: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(0, 60, 255));
+   width:170vh;
+   margin-left:35vh;
+   margin-bottom:25vh;
+   border-radius:3vh;
+   z-index:-2;
+   box-shadow:0px 8px 16px 4px black;
+   border:0.7vh solid black;
+   height:76vh;
+   padding-bottom:6vh
+}
+.section2 > img{
+   float:left;
+   height:49.7%;
+   width:235px;
+   margin-left:25px;
+   margin-top:19.1px;
+   border:1vh solid rgba(0, 4, 255, 0.438)
+}
+.section2 > p{
+   font-size:23px;
+   float:right;
+   text-align:left;
+   margin-right:15px;
+   margin-top:22px;
+   border:0.7vh solid rgb(27, 27, 27);
+   width:71%;
+   height:49.7%;
+   font-family:comic sans ms;
+   word-wrap:break-word;
+   border-radius:0.4vh
+}
+.section2 > .p2{
+   font-size:33px;
+   float:left;
+   text-align:left;
+   margin-left:25px;
+   margin-top:3vh;
+   overflow-y: auto;
+   border:0.7vh solid rgb(27,27,27);
+   width:95.7%;
+   height:32.7%;
+   font-family:comic sans ms;
+   word-wrap:break-word;
+   border-radius:0.4vh
+  }
+  .p2::-webkit-scrollbar {
+     width: 1vh;
+  }
+
+  .p2::-webkit-scrollbar-thumb{
+   background: rgb(77, 37, 255);
+   border-radius: 21px;
+  }
+
+  .p2::-webkit-scrollbar-thumb:hover {
+   background: rgb(230, 230, 230);
+  }
+  .p2::-webkit-scrollbar-track {
+   background: white;
+   border-radius: 10px;
+  }
    .template3{
     width:170vh;
     background-image: linear-gradient(to bottom right,#1F1F3F,indigo);
@@ -365,7 +423,7 @@
   .a3rd-img{
     width:35vh;
     height:35vh;
-    top:275%;
+    top:385%;
     left:45vh;
     position:absolute;
     float:left;
@@ -378,7 +436,7 @@
   .a4th-img{
     width:35vh;
     height:35vh;
-    top:275%;
+    top:385%;
     right:70vh;
     position:absolute;
     background-color:blue;
@@ -443,20 +501,17 @@
     color:tomato
   }
   .lightMode{
-    background-color:#1E1E2F;
+    background-color:#FAFAFA;
   }
   .lightMode2{
-    background-image: linear-gradient(to right,#1E1E2F,#34344A);
-    color:rgb(226, 223, 223);
-    text-shadow:4px 4px 4px #6C63FF
+    background-image: linear-gradient(to right,#FFFFFF,#E6E6E6);
+      color:#2C2C2C;
+    text-shadow: 2px 2px 5px #CCCCCC;
   }
   .lightMode21{
-    background-color:rgb(255, 233, 233);
+    background-color:rgb(14, 13, 13);
   }
   .lightModenav{
-    background :linear-gradient(180deg, #161f29,rgb(17, 10, 32));
-  }
-  .lightModeTemp{
-    background-color:#222236;;
+    background: linear-gradient(180deg,rgb(204, 203, 203),white);
   }
 }
